@@ -45,7 +45,7 @@ class _FormPageState extends State<FormPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Formulário com ListView Dinâmico'),
+        title: const Text('atv-02 - Todo List'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(10.0),
@@ -61,7 +61,7 @@ class _FormPageState extends State<FormPage> {
                       decoration: const InputDecoration(labelText: 'Digite um item'),
                       validator: (value) {
                         if (value == null || value.isEmpty) {
-                          return 'Por favor, insira um texto';
+                          return 'Entre com um título';
                         }
                         return null;
                       },
